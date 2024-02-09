@@ -1,0 +1,125 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1600721296496-bb850e5310ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8YWV1NnJMLWo2ZXd8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Styling */
+.main {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    filter: brightness(70%);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* ToDo Styling */
+.todo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo_value {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.todo_checkbox {
+    margin-right: 10px;
+}
+
+.todo_value::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.todo_value:focus::placeholder {
+    color: transparent;
+}
+
+.todo_value:focus {
+    border-color: #ffcc00;
+}
